@@ -4,74 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cv Geoffrey 2021ttt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>CV Geoffrey Doco</title>
     <style>
-        body{min-width: 320px; max-width: 1000px;
-            background-color: rgb(133, 126, 126);
-            border: rgb(32, 133, 123) 10px solid; border-radius: 5px; margin: 100px; 
-            box-shadow: 10px 5px 5px black;
-        }
-        h3, h4{
-            color: rgb(51, 45, 45); text-align: center;
-        }
-        .photoperso {
-            height: 150px; margin: 110px 100px; top:20px;
-            right:20px; 
-        }
-        header {
-            padding-left: 10px;
-        }
-        main {
-            padding-left: 10px;
-        }
-        p{
-            min-width: 320px; max-width: 500px;
-        }
+        *{font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none; list-style: none;}
+        ul, li {padding-left:0;}
+        body {background: url("steelbg.jpg") fixed;}
+        header, .blockleft, .blockright {border: 5px solid rgb(46, 49, 46); margin: 5px; padding: 15px; border-radius: 15px; background: url("steelbg.jpg") 10% 90%;}   
+        header {margin-left: auto; margin-right: auto; position: relative; }
+        .blockleft, .blockright {width: 400px; }
+        main {align-items: top;  margin-right: auto; margin-left: auto;}       
+        @media (max-width:499px){
+            header{width: 300px;}            
+            .blockleft, .blockright {display: flex; flex-direction: column; width: 300px; margin-left: auto; margin-right: auto;}            
+            }
+        @media (min-width:500px){
+            header{width: 645px;}
+            main{width: 645px; display: flex;} 
+            H1 {text-align: center;}           
+            }
+        h1 {font-weight: bold; font-size: 25px;}
+        h4, h5 {color:rgb(25, 87, 221); text-align: center;}
+        img {height: 60px; position: absolute; top: 5%; right: 5%; border-radius: 5px;}
+        li { font-size: 10px; line-height: 150%;}
+        .titre  {color: indigo; font-size: 20px; text-transform: uppercase;}
+        .titres {color: indigo; font-size: 10px; text-transform: uppercase;}
+        .skills:before {content: "-♠️ ";}
+        .skills{font-size: 8px;}
+        
     </style>
-</head>
-<body>
-    <header>
-        <h1>Geoffrey Doco</h1>
-        <h3>Développement, intégration d’application WEB</h3>
-        <img src="tofgeo.jpg" alt="Ma photo" class="photoperso">
-        <h4>Recherche d'un stage d'observation du 01/09/21 au 28/09/21</h4>        
-    </header>
-    <main>
-        <p>
-            <h2>Contact</h2>
-            <div>
-            40 Rue du chemin neuf 59100 Roubaix<br>Tel. 06 80 35 53 41<br>
-            <a href="mailto:geoffrey_doco@hotmail.com">geoffrey_doco@hotmail.com</a><br>
-            <div>35 ans - Permis B</div>
-            </div>
-        </p>
-        <p>
-            <h2>Formation</h2>
-            <h2> SIMPLON, Roubaix (été 2021)</h2>
-            <h2> CNAM, Lille (2021-...)</h2>
-            <div>Formation CNAM Technicien Développeur</div>
-            <div>Java, Sql, HTML...</div>
-            <h2>Espeme Lille -- Groupe Edhec</h2>
-            <div>Master (Promo 2007)</div>
-            <div>Ecole supérieur de management des entreprises</div>
-            <div>Spécialité Marketing et Commerce International</div>
-            <div>Erasmus Kaunas, Lituanie</div>
-        </p>
-        <p>
-            <h2>Centre d'intérêts</h2>
-            <div class="interest">Sport: Triathlon, Tennis, Tir à l'arc</div>
-            <div class="interest">Lecture : Sciences sociales, Economie, Philosophie, SF</div>
-            <div class="interest">Vie associative : Coopérateur dans un café citoyen,
-                Bénévolat auprès de Virlanie, enfants des rues aux
-                philippines</div>
-            <div class="interest">Voyages : Japon, Philippines, Sibérie, Mongolie,
-                Mexique, Usa, Espagne, Turquie, Afrique du Nord,
-                Europe de l’est…</div>
-            <div class="interest">Jeux de société et jeux en tous genres</div>
-        </p>       
+        </head>
+        <body>
+            <header>
+                <h1>GEOFFREY DOCO</h1>
+                <h4>Développement, intégration d'application WEB</h4>
+                <h5>Recherche un stage d'observation du 01/09/21 au 28/09/21</h5>
+                <img src="tofgeo.jpg" alt="photoperso">
+            </header>
 
-    </main>
-    
-    
+            <main>
+                <div class="blockleft">                                    
+                        <ul>
+                            <li class="titre">Contact</li>
+                            <li>40 rue du chemin neuf 59100 Roubaix</li>
+                            <li>Tél: 06 80 35 53 41</li>
+                            <li><a href="mailto:geoffrey_doco@hotmail.com">geoffrey_doco@hotmail.com</a></li>
+                            <li>35 ans - Permis B</li>
+                        </ul>
+                        <ul>
+                            <li class="titre">Formation</li>
+                            <li><strong>SIMPLON, Roubaix</strong> (Ete 2021)</li>
+                            <li><strong>CNAM,</strong>  Lille (2021-.....)<br>
+                                Formation CNAM Technicien développeur 
+                                Java, Sql, HTML.</li>
+                            <li><strong>ESPEME,</strong>  Lille — <em> Groupe Edhec</em>
+                                Master (promo 2007)
+                                Ecole supérieure de management des entreprises <br>
+                                Spécialité Marketing et Commerce international <br>
+                                Erasmus à Kaunas, Lituanie</li>                            
+                        </ul>
+                        <ul>
+                            <li class="titre">Centre d'intérêts</li>
+                            <li><strong>Sport :</strong> Triathlon, Tennis, Tir à l’arc</li>
+                            <li><strong>Lecture</strong>  Sciences sociales, Economie, Philosophie, SF</li>
+                            <li><strong>Vie associative</strong>   Coopérateur dans un café citoyen,
+                                Bénévolat auprès de Virlanie, enfants des rues aux
+                                philippine</li>    
+                            <li><strong>Voyage:</strong> Japon, Philippines, Sibérie, Mongolie,
+                                Mexique, Usa, Espagne, Turquie, Afrique du Nord,
+                                Europe de l’est…</li> 
+                            <li><strong>Jeux de société et jeux en tous genres</strong></li>                          
+                        </ul>
+                    
+                </div>
+                <div class="blockright">
+                    <br>
+                    <span class="titre">Poles de compétences</span>
+                    <ul>
+                        <li class="titres"> Numérique</li>
+                        <li class="skills">HTML, CSS, JQUERY</li>
+                        <li class="skills">POSTGRESQL</li>
+                        <li class="skills">AUTOCAD 2D</li>
+                        <li class="skills">JAVA DEBUTANT</li>
+                        <li class="skills">ERP/gestion supply chain</li>
+                        <li class="skills">Jeux Vidéo PC</li>
+                    </ul>
+                    <ul>
+                        <li class="titres"> Logistique</li>
+                        <li class="skills">Réception/Expédition</li>
+                        <li class="skills">Gestion et manutention des stocks (CACES)</li>
+                        <li class="skills">Livraison/Planning</li>                        
+                    </ul>
+                    <ul>
+                        <li class="titres"> Industrie</li>
+                        <li class="skills">Contrôle Qualité</li>
+                        <li class="skills">Dessin industriel</li>
+                        <li class="skills">Découpe laser</li> 
+                        <li class="skills">Montage/Tôlerie/Soudure/Peinture</li>                            
+                    </ul>
+                    <ul>
+                        <li class="titres"> Relation Clients</li>
+                        <li class="skills">Responsable de salle</li>
+                        <li class="skills">Animation de tables de jeux</li>
+                        <li class="skills">Employés de bar/restaurant</li> 
+                        <li class="skills">Démarchage téléphonique</li>                            
+                    </ul>
+                    <ul>
+                        <li class="titres">Ouverture à l'international</li>
+                        <li class="skills">Anglais Lu, Ecrit, Parlé</li>
+                        <li class="skills">Voyages</li>                                                   
+                    </ul>
+                    <ul>
+                        <li class="titres">Distribution/Commerce</li>
+                        <li class="skills">Achats / Approvisionnements</li>
+                        <li class="skills">Gestion des stocks</li>
+                        <li class="skills">Supply chain</li>                                                   
+                    </ul>
+                    <ul>
+                        <li class="titres">Relations humaines</li>
+                        <li class="skills">Formateur</li>
+                        <li class="skills">Gestion des plannings</li>
+                        <li class="skills">Développement personnel</li>                                                   
+                    </ul>
+
+
+                </div>
+            </main>
+        </body>
 </body>
 </html>
